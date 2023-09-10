@@ -1,0 +1,33 @@
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script&family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&family=Red+Hat+Display:wght@400;600&family=Sacramento&display=swap');
+
+// SASS Import
+@import 'variables.scss';
+
+// General
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  body {
+    font-size: 16px;
+    font-family: $quick;
+    background: linear-gradient(to bottom, #E2EBF3, #876b9177 80%);
+    }
+}
+a {
+  text-decoration: none;
+}
+
+// Header - navBar
+.main-header {
+  .titulo {
+    margin-top: 7rem;
+  }
+}
+// SASS Import
+@import 'header-footer.scss';
