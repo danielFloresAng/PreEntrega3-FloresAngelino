@@ -19,8 +19,14 @@ a {
   text-decoration: none;
 }
 
-.main-header .titulo {
-  margin-top: 7rem;
+.main-header {
+  padding-top: 20rem;
+  width: 100%;
+}
+.main-header .titulo-main {
+  background-image: url(../img/Cupcakes\ m.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .main-header nav {
@@ -47,12 +53,12 @@ a {
 .main-header nav .nav-fluid #collapsibleNavbar ul li .nav-link {
   color: #E2EBF3;
   background-color: #49516D;
-  font-size: 2rem;
-  transition: 0.5s;
+  font-size: 2.2rem;
+  transition: 0.7s;
 }
 .main-header nav .nav-fluid #collapsibleNavbar ul li .nav-link:hover {
   background-color: #876B91;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
 }
 
 @media only screen and (min-width: 576px) {
@@ -62,7 +68,6 @@ a {
   }
   .main-header nav .nav-fluid {
     flex-direction: column;
-    justify-content: center;
   }
   .main-header nav .nav-fluid .navbar-brand {
     margin: 0.7rem;
@@ -79,12 +84,12 @@ a {
   }
   .main-header nav .nav-fluid .navbar-brand i {
     margin: 0.7rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
   .main-header nav .nav-fluid .navbar-brand p {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 800;
-    margin-left: 3rem;
+    margin-left: 3.2rem;
   }
   .main-header nav .nav-fluid .navbar-toggler {
     background-color: #49516D;
@@ -109,7 +114,6 @@ a {
   }
   .main-header nav .nav-fluid .navbar-collapse ul li .nav-link {
     width: 14rem;
-    font-size: 2.2rem;
     font-weight: 500;
     border-radius: 45px 45px 0 0;
     text-align: center;
@@ -118,14 +122,18 @@ a {
 }
 @media only screen and (min-width: 820px) {
   .main-header .navbar .nav-fluid .navbar-brand i {
-    font-size: 4rem;
+    font-size: 3.1rem;
   }
   .main-header .navbar .nav-fluid .navbar-brand p {
-    font-size: 4rem;
+    font-size: 3.1rem;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .main-header .navbar .nav-fluid {
+    flex-direction: row;
   }
   .main-header .navbar .nav-fluid .navbar-collapse {
-    display: flex;
-    justify-content: end;
+    padding-left: 10%;
   }
 }
 .div-footer {
@@ -147,7 +155,7 @@ a {
   font-size: 18px;
 }
 .div-footer footer ul {
-  width: 200px;
+  width: 50%;
   justify-content: space-around;
   flex-wrap: nowrap;
 }
@@ -158,4 +166,32 @@ a {
   margin-top: 1rem;
   color: #E2EBF3 !important;
   font-size: 19px;
+}
+
+.footer-hover {
+  transition: 0.5s;
+}
+
+.footer-hover:hover {
+  color: white !important;
+  font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .div-footer footer {
+    flex-direction: row;
+    padding-top: 3rem !important;
+  }
+  .div-footer footer span .text-muted {
+    font-size: 2.2rem;
+  }
+  .div-footer footer .cookie-bite i {
+    font-size: 2.2rem;
+  }
+  .div-footer footer ul {
+    width: 33%;
+  }
+  .div-footer footer ul li a i {
+    font-size: 23px;
+  }
 }/*# sourceMappingURL=styles.css.map */

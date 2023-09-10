@@ -19,15 +19,336 @@ html {
     background: linear-gradient(to bottom, #E2EBF3, #876b9177 80%);
     }
 }
+// Links, párrafos y headings
+.heading {
+  font-size: 3.8rem;
+  font-weight: 800;
+  padding: 0.8rem 0;
+  margin: 2rem 0;
+  font-family: $poi;
+  color: $main;
+}
+h2 {
+  font-family: $poi;
+  padding: 0.5rem;
+  font-size: 2.8rem;
+  margin: 1.2rem 0;
+  color: $main;
+  font-weight: 600;
+}
 a {
   text-decoration: none;
 }
-
-// Header - navBar
-.main-header {
-  .titulo {
-    margin-top: 7rem;
+// Links, párrafos y headings - mediaQueries
+@media only screen and (min-width: 576px) {
+  .heading {
+    font-size: 4.3rem;
+    margin-bottom: .8rem;
+  }
+  h2 {
+    font-size: 3.3rem;
   }
 }
+@media only screen and (min-width: 980px) {
+  .heading {
+    font-size: 4.6rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+  }
+}
+// Section - Title
+.titulo-main {
+  margin-top: 10rem;
+    background-image: url(../img/Cupcakes\ m.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    .container-title {
+      color: rgb(212, 212, 212);
+      background-color: #111003b6;
+      margin: 0;
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+      .titulo {
+        font-family: $poi;
+        font-size: 3.2rem;
+      }
+      .eslogan {
+        font-family: $danc;
+        font-size: 3rem;
+      }
+    }
+}
+// Title - mediaQueries
+@media only screen and (min-width: 576px) {
+  .titulo-main {
+    margin-top: 12rem;
+      .container-title {
+        .titulo {
+          font-size: 3.9rem;
+      }
+        .eslogan {
+          font-size: 3.7rem;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 980px) {
+    .titulo-main {
+      margin-top: 8rem;
+      .container-title {
+        height: 22rem;
+        .titulo {
+          
+          font-size: 4.4rem;
+          }
+        .eslogan {
+          
+          font-size: 4.2rem;
+          }
+      }
+    }
+}
+// INDEX
+// Main
+.index-main {
+  .album-fotos {
+    .div-galeria {
+      height: 40rem;
+      max-width: 60%;
+      display: grid;
+      padding: 7px;
+      gap: 1%;
+      grid-template-areas: 
+      "foto1 foto1 foto2 foto2"
+      "foto3 foto3 foto4 foto4"
+      "foto5 foto5 foto6 foto6"
+      "foto7 foto7 foto8 foto8"
+      ;
+      .img-galeria {
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(40%);
+        transition: all 0.6s;
+      }
+      .img-galeria:hover {
+        filter: grayscale(0%);
+        transform: scale(1.02);
+      }
+      .item1 {
+        background-image: url(../img/pexels-jess-bailey-designs-913136.jpg);
+        grid-area: foto1;
+      }
+      .item2 {
+          background-image: url(../img/Cake\ c.jpg);
+          grid-area: foto2;
+      }
+      .item3 {
+          background-image: url(../img/Cup\ c.jpg);
+          grid-area: foto3;
+      }
+      .item4 {
+          background-image: url(../img/Cookie\ c.jpg);
+          grid-area: foto4;
+      }
+      .item5 {
+          background-image: url(../img/pexels-gordon-ky-15505793.jpg);
+          grid-area: foto5;
+      }
+      .item6 {
+          background-image: url(../img/pexels-shvets-production-7525193.jpg);
+          grid-area: foto6;
+      }
+      .item7 {
+          background-image: url(../img/pexels-rodrigo-souza-2531546.jpg);
+          grid-area: foto7;
+      }
+      .item8 {
+          background-image: url(../img/pexels-los-muertos-crew-8478058.jpg);
+          grid-area: foto8;
+      }
+    }
+  }
+  .link-index-fotos {
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 575;
+    color: $secundary;
+    a {
+      text-decoration: underline;
+      color: $secundary;
+    }
+}
+  .index-article {
+    p {
+    line-height: normal;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: .5rem auto;
+    padding: 1rem;
+    width: 80%;
+    }
+  }
+}
+// Main - mediaQueries
+@media only screen and (min-width: 660px) {
+  .index-main {
+    .album-fotos {
+      .div-galeria {
+        height: 65rem;
+        max-width: 70%;
+        // display: grid;
+        padding: 7px;
+        // gap: 1%;
+        grid-template-areas: 
+        "foto1 foto2 foto3 foto3"
+        "foto1 foto4 foto4 foto8"
+        "foto6 foto5 foto7 foto8"
+        ;
+      }
+    }
+    .link-index-fotos {
+      font-size: 1.9rem;
+      font-style: italic;
+      font-weight: 600;
+    }
+    .index-article {
+      p {
+      font-size: 1.8rem;
+      }  
+    }
+  }
+}
+
+// Productos
+// Productos -  Main
+.products-main {
+  margin-top: 10rem;
+  .div-products {
+    display: flex;
+    flex-direction: column;
+    .products-section {
+      .productos-image {
+        height: 16rem;
+        width: 16rem;
+        margin: 2rem auto;
+        border: solid #e2ebf3 8px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position-y: center;
+        background-position-x: center;
+      }
+      #cupcakes{
+        background-image: url(../img/pexels-taryn-elliott-4099124.jpg);
+      }
+      #minicakes{
+        background-image: url(../img/pexels-sergio-arreola-14781509.jpg);
+      }
+      #pasteles{
+        background-image: url(../img/Cake\ c.jpg);
+      }
+      #galletas{
+        background-image: url(../img/Cookie\ c.jpg);
+      }
+      ul {
+        list-style: none;
+        margin-bottom: 3rem;
+        li {
+          font-size: 1.6rem;
+        }
+        .galletas-nota {
+          font-size: 1.3rem;
+          font-style: italic;
+          margin-top: 14px;
+        }
+      }
+    }
+  }
+}
+// Productos - Main - mediaQueries
+@media only screen and (min-width: 576px) {
+  .products-main {
+    margin-top: 15rem;
+    .div-products {
+      flex-direction: row;
+      .products-section {
+        .productos-image {
+          height: 20rem;
+          width: 20rem;
+          border: solid #e2ebf3 10px;
+        }
+        ul {
+          margin-bottom: 4.5rem;
+          li {
+            font-size: 1.7rem;
+          }
+          .galletas-nota {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 980px) {
+  .products-main {
+    margin-top: 11rem;
+    .div-products {
+      .products-section {
+        .productos-image {
+          height: 24rem;
+          width: 24rem;
+          border: solid #e2ebf3 13px;
+        }
+        ul {
+          li {
+            font-size: 1.9rem;
+          }
+          .galletas-nota {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+// Cotizaciones button
+.cotizaciones-button {
+  margin:0 0 2rem 60%;
+  a {
+    background-color: $main;
+    color: $contrastTwo;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 12px;
+    padding: 3px 8px;
+    bottom: 30%;
+    right: 1%;
+    transition: .8s;
+  }
+  a:hover{
+    font-size: 13.2px;
+    color: #E2EBF3;
+    transform: scale(1.1)
+  }
+}
+/*  Cotizaciones button - mediaqueries */
+@media (min-width: 770px) {
+  .cotizaciones-button {
+    margin:0 0 2rem 60%;
+    a {
+      display: inline-block;
+      position: fixed;
+      .texto-cotizaciones {
+        display: block;
+      }
+    }
+  }
+}
+
+
 // SASS Import
 @import 'header-footer.scss';
