@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script&family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&family=Red+Hat+Display:wght@400;600&family=Sacramento&display=swap");
 * {
   margin: 0;
@@ -28,7 +29,7 @@ h2 {
   font-family: "Poiret One", cursive;
   padding: 0.5rem;
   font-size: 2.8rem;
-  margin: 1.2rem 0;
+  margin: 1.6rem 0 1.1rem 0;
   color: #49516D;
   font-weight: 600;
 }
@@ -37,25 +38,34 @@ a {
   text-decoration: none;
 }
 
+.titulo-main, .main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
+  margin-top: 11rem !important;
+}
+
 @media only screen and (min-width: 576px) {
+  .main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
+    margin-top: 13rem !important;
+  }
   .heading {
-    font-size: 4.3rem;
+    font-size: 4.9rem;
     margin-bottom: 0.8rem;
   }
   h2 {
-    font-size: 3.3rem;
+    font-size: 3.8rem;
   }
 }
 @media only screen and (min-width: 980px) {
+  .main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
+    margin-top: 12rem !important;
+  }
   .heading {
-    font-size: 4.6rem;
+    font-size: 6.5rem;
   }
   h2 {
-    font-size: 3.6rem;
+    font-size: 5rem;
   }
 }
 .titulo-main {
-  margin-top: 10rem;
   background-image: url(../img/Cupcakes\ m.jpg);
   background-size: cover;
   background-position: center;
@@ -78,9 +88,6 @@ a {
 }
 
 @media only screen and (min-width: 576px) {
-  .titulo-main {
-    margin-top: 12rem;
-  }
   .titulo-main .container-title .titulo {
     font-size: 3.9rem;
   }
@@ -188,9 +195,6 @@ a {
     font-size: 1.8rem;
   }
 }
-.products-main {
-  margin-top: 10rem;
-}
 .products-main .div-products {
   display: flex;
   flex-direction: column;
@@ -231,9 +235,6 @@ a {
 }
 
 @media only screen and (min-width: 576px) {
-  .products-main {
-    margin-top: 15rem;
-  }
   .products-main .div-products {
     flex-direction: row;
   }
@@ -253,9 +254,6 @@ a {
   }
 }
 @media only screen and (min-width: 980px) {
-  .products-main {
-    margin-top: 11rem;
-  }
   .products-main .div-products .products-section .productos-image {
     height: 24rem;
     width: 24rem;
@@ -266,6 +264,65 @@ a {
   }
   .products-main .div-products .products-section ul .galletas-nota {
     font-size: 1.6rem;
+  }
+}
+.main-servicios .servicios-section .fotos {
+  margin: 0.1rem auto;
+  padding: 5rem;
+  max-width: 60rem;
+}
+.main-servicios .servicios-section .fotos-servicios #img-diseno-1 {
+  background-image: url(../img/Cookies\ c.jpg);
+  grid-area: img-diseno-1;
+}
+.main-servicios .servicios-section .fotos-servicios #img-diseno-2 {
+  background-image: url(../img/pexels-jess-bailey-designs-853004.jpg);
+  grid-area: img-diseno-2;
+}
+.main-servicios .servicios-section .fotos-servicios #img-diseno-3 {
+  background-image: url(../img/pexels-merlin-lightpainting-11309253.jpg);
+  grid-area: img-diseno-3;
+}
+.main-servicios .servicios-section .fotos-servicios #img-diseno-4 {
+  background-image: url(../img/pexels-los-muertos-crew-8478058.jpg);
+  grid-area: img-diseno-4;
+}
+.main-servicios .servicios-section .fotos-eventos #img-even-1 {
+  background-image: url(../img/pexels-ibrahim-boran-903400.jpg);
+  grid-area: img-even-1;
+}
+.main-servicios .servicios-section .fotos-eventos #img-even-2 {
+  background-image: url(../img/pexels-deeana-arts-2418652.jpg);
+  grid-area: img-even-2;
+}
+.main-servicios .servicios-section .fotos-eventos #img-even-3 {
+  background-image: url(../img/pexels-sergio-arreola-14781509.jpg);
+  grid-area: img-even-3;
+}
+
+.foto-diseño {
+  border: solid 0.5px #49516D;
+  height: 16rem;
+  margin: 1rem auto;
+  border-radius: 7px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 500px) {
+  .main-servicios .servicios-section .fotos-servicios {
+    display: grid;
+    grid-template-areas: "img-diseno-1 img-diseno-2" "img-diseno-3 img-diseno-4";
+    gap: 1%;
+  }
+  .main-servicios .servicios-section .fotos-eventos {
+    display: grid;
+    grid-template-areas: "img-even-1 img-even-1" "img-even-2 img-even-3";
+    gap: 1%;
+  }
+  .foto-diseño {
+    height: 21rem;
+    margin: 0;
   }
 }
 .cotizaciones-button {
@@ -300,6 +357,148 @@ a {
   }
   .cotizaciones-button a .texto-cotizaciones {
     display: block;
+  }
+}
+.main-contacto {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 4rem;
+}
+.main-contacto .contacto-section {
+  width: 80%;
+  margin: 1rem auto;
+  text-align: justify;
+}
+.main-contacto .contacto-section p {
+  text-align: left;
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.main-contacto .contacto-section p a {
+  color: #876B91;
+}
+.main-contacto .contacto-section p a:hover {
+  text-decoration: underline;
+}
+.main-contacto .mapa {
+  width: 95%;
+  height: 20rem;
+  margin: 4rem auto;
+  border: solid 4px #BFDB95;
+  border-radius: 10px;
+}
+.main-contacto .mapa iframe {
+  width: 100%;
+  height: 100%;
+}
+.main-contacto i {
+  margin-right: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .main-contacto {
+    width: 90%;
+  }
+  .main-contacto .contacto-section p {
+    font-size: 2rem;
+  }
+  .main-contacto .mapa {
+    width: 95%;
+    height: 30rem;
+    border: solid 8px #BFDB95;
+  }
+}
+@media (min-width: 920px) {
+  .main-contacto .contacto-section p {
+    font-size: 2.4rem;
+  }
+  .main-contacto .mapa {
+    width: 70%;
+    height: 40rem;
+  }
+}
+.cotizaciones-main {
+  margin: auto;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+.cotizaciones-main form {
+  background-color: #876b91;
+  padding: 3rem;
+  border-radius: 10px;
+}
+.cotizaciones-main form legend {
+  padding: 2rem;
+  border-style: none;
+  text-transform: uppercase;
+  font-family: "Poiret One", cursive;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #E2EBF3;
+}
+.cotizaciones-main form .input-cotizaciones {
+  margin-bottom: 1.4rem;
+  color: #E2EBF3;
+}
+.cotizaciones-main form .input-cotizaciones label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  text-align: left !important;
+}
+.cotizaciones-main form .input-cotizaciones input, .cotizaciones-main form .input-cotizaciones select {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  height: 2.4rem;
+}
+.cotizaciones-main form .input-cotizaciones textarea {
+  margin: 0 auto;
+  width: 100%;
+  height: 8rem;
+}
+
+@media (min-width: 576px) {
+  .cotizaciones-main {
+    width: 85%;
+  }
+  .cotizaciones-main form legend {
+    font-size: 2.1rem;
+    padding: 1rem;
+  }
+  .cotizaciones-main form .input-cotizaciones label {
+    font-size: 2rem;
+  }
+  .cotizaciones-main form .input-cotizaciones input, .cotizaciones-main form .input-cotizaciones select {
+    margin-bottom: 1.8rem;
+    height: 3rem;
+  }
+}
+@media (min-width: 800px) {
+  .cotizaciones-main {
+    width: 65%;
+  }
+  .cotizaciones-main form fieldset {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2%;
+  }
+  .cotizaciones-main form fieldset legend {
+    font-size: 2.4rem;
+    padding: 1rem;
+    grid-column: span 2;
+  }
+  .cotizaciones-main form fieldset .input-cotizaciones label {
+    font-size: 2.2rem;
+  }
+  .cotizaciones-main form fieldset .input-cotizaciones input, .cotizaciones-main form fieldset .input-cotizaciones select {
+    margin-bottom: 1.3rem;
+  }
+  .cotizaciones-main form fieldset .input-cotizaciones textarea {
+    grid-column: span 2;
+    width: 200%;
+    margin-bottom: 3rem;
   }
 }
 .main-header nav {
