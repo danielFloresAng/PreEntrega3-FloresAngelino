@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script&family=Poiret+One&family=Quicksand:wght@300;400;500;600;700&family=Red+Hat+Display:wght@400;600&family=Sacramento&display=swap");
 * {
   margin: 0;
@@ -15,20 +16,557 @@ html body {
   background: linear-gradient(to bottom, #E2EBF3, rgba(135, 107, 145, 0.4666666667) 80%);
 }
 
+.heading {
+  font-size: 3.8rem;
+  font-weight: 800;
+  padding: 0.8rem 0;
+  margin: 2rem 0;
+  font-family: "Poiret One", cursive;
+  color: #49516D;
+}
+
+h2 {
+  font-family: "Poiret One", cursive;
+  padding: 0.5rem;
+  font-size: 2.8rem;
+  margin: 1.6rem 0 1.1rem 0;
+  color: #49516D;
+  font-weight: 600;
+}
+
 a {
   text-decoration: none;
 }
 
-.main-header {
-  padding-top: 20rem;
-  width: 100%;
+.main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
+  margin-top: 11rem !important;
 }
-.main-header .titulo-main {
+
+@media only screen and (min-width: 576px) {
+  .main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
+    margin-top: 13rem !important;
+  }
+  .heading {
+    font-size: 4.9rem;
+    margin-bottom: 0.8rem;
+  }
+  h2 {
+    font-size: 3.8rem;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
+    margin-top: 12rem !important;
+  }
+  .heading {
+    font-size: 6.5rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+}
+.titulo-main {
+  margin-top: 10rem;
   background-image: url(../img/Cupcakes\ m.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+.titulo-main .container-title {
+  color: rgb(212, 212, 212);
+  background-color: rgba(17, 16, 3, 0.7137254902);
+  margin: 0;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.titulo-main .container-title .titulo {
+  font-family: "Poiret One", cursive;
+  font-size: 3.2rem;
+}
+.titulo-main .container-title .eslogan {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+}
+
+@media only screen and (min-width: 576px) {
+  .titulo-main {
+    margin-top: 12rem;
+  }
+  .titulo-main .container-title .titulo {
+    font-size: 3.9rem;
+  }
+  .titulo-main .container-title .eslogan {
+    font-size: 3.7rem;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .titulo-main {
+    margin-top: 8rem;
+  }
+  .titulo-main .container-title {
+    height: 22rem;
+  }
+  .titulo-main .container-title .titulo {
+    font-size: 4.4rem;
+  }
+  .titulo-main .container-title .eslogan {
+    font-size: 4.2rem;
+  }
+}
+.index-main .album-fotos .div-galeria {
+  height: 40rem;
+  max-width: 60%;
+  display: grid;
+  padding: 7px;
+  gap: 1%;
+  grid-template-areas: "foto1 foto1 foto2 foto2" "foto3 foto3 foto4 foto4" "foto5 foto5 foto6 foto6" "foto7 foto7 foto8 foto8";
+}
+.index-main .album-fotos .div-galeria .img-galeria {
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(40%);
+  transition: all 0.6s;
+}
+.index-main .album-fotos .div-galeria .img-galeria:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+}
+.index-main .album-fotos .div-galeria .item1 {
+  background-image: url(../img/pexels-jess-bailey-designs-913136.jpg);
+  grid-area: foto1;
+}
+.index-main .album-fotos .div-galeria .item2 {
+  background-image: url(../img/Cake\ c.jpg);
+  grid-area: foto2;
+}
+.index-main .album-fotos .div-galeria .item3 {
+  background-image: url(../img/Cup\ c.jpg);
+  grid-area: foto3;
+}
+.index-main .album-fotos .div-galeria .item4 {
+  background-image: url(../img/Cookie\ c.jpg);
+  grid-area: foto4;
+}
+.index-main .album-fotos .div-galeria .item5 {
+  background-image: url(../img/pexels-gordon-ky-15505793.jpg);
+  grid-area: foto5;
+}
+.index-main .album-fotos .div-galeria .item6 {
+  background-image: url(../img/pexels-shvets-production-7525193.jpg);
+  grid-area: foto6;
+}
+.index-main .album-fotos .div-galeria .item7 {
+  background-image: url(../img/pexels-rodrigo-souza-2531546.jpg);
+  grid-area: foto7;
+}
+.index-main .album-fotos .div-galeria .item8 {
+  background-image: url(../img/pexels-los-muertos-crew-8478058.jpg);
+  grid-area: foto8;
+}
+.index-main .link-index-fotos {
+  font-size: 1.7rem;
+  font-style: italic;
+  font-weight: 575;
+  color: #876B91;
+}
+.index-main .link-index-fotos a {
+  text-decoration: underline;
+  color: #876B91;
+}
+.index-main .index-article p {
+  line-height: normal;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  width: 80%;
+}
+
+@media only screen and (min-width: 660px) {
+  .index-main .album-fotos .div-galeria {
+    height: 65rem;
+    max-width: 70%;
+    padding: 7px;
+    grid-template-areas: "foto1 foto2 foto3 foto3" "foto1 foto4 foto4 foto8" "foto6 foto5 foto7 foto8";
+  }
+  .index-main .link-index-fotos {
+    font-size: 1.9rem;
+    font-style: italic;
+    font-weight: 600;
+  }
+  .index-main .index-article p {
+    font-size: 1.8rem;
+  }
+}
+.products-main .div-products {
+  display: flex;
+  flex-direction: column;
+}
+.products-main .div-products .products-section .productos-image {
+  height: 16rem;
+  width: 16rem;
+  margin: 2rem auto;
+  border: solid #e2ebf3 8px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+.products-main .div-products .products-section #cupcakes {
+  background-image: url(../img/pexels-taryn-elliott-4099124.jpg);
+}
+.products-main .div-products .products-section #minicakes {
+  background-image: url(../img/pexels-sergio-arreola-14781509.jpg);
+}
+.products-main .div-products .products-section #pasteles {
+  background-image: url(../img/Cake\ c.jpg);
+}
+.products-main .div-products .products-section #galletas {
+  background-image: url(../img/Cookie\ c.jpg);
+}
+.products-main .div-products .products-section ul {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+.products-main .div-products .products-section ul li {
+  font-size: 1.6rem;
+}
+.products-main .div-products .products-section ul .galletas-nota {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 14px;
+}
+
+@media only screen and (min-width: 576px) {
+  .products-main .div-products {
+    flex-direction: row;
+  }
+  .products-main .div-products .products-section .productos-image {
+    height: 20rem;
+    width: 20rem;
+    border: solid #e2ebf3 10px;
+  }
+  .products-main .div-products .products-section ul {
+    margin-bottom: 4.5rem;
+  }
+  .products-main .div-products .products-section ul li {
+    font-size: 1.7rem;
+  }
+  .products-main .div-products .products-section ul .galletas-nota {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .products-main .div-products .products-section .productos-image {
+    height: 24rem;
+    width: 24rem;
+    border: solid #e2ebf3 13px;
+  }
+  .products-main .div-products .products-section ul li {
+    font-size: 1.9rem;
+  }
+  .products-main .div-products .products-section ul .galletas-nota {
+    font-size: 1.6rem;
+  }
+}
+.main-servicios .servicios-section .fotos {
+  margin: 0.1rem auto;
+  padding: 5rem;
+  max-width: 60rem;
+}
+.main-servicios .servicios-section .fotos-servicios #img-diseno-1 {
+  background-image: url(../img/Cookies\ c.jpg);
+  grid-area: img-diseno-1;
+}
+.main-servicios .servicios-section .fotos-servicios #img-diseno-2 {
+  background-image: url(../img/pexels-jess-bailey-designs-853004.jpg);
+  grid-area: img-diseno-2;
+}
+.main-servicios .servicios-section .fotos-servicios #img-diseno-3 {
+  background-image: url(../img/pexels-merlin-lightpainting-11309253.jpg);
+  grid-area: img-diseno-3;
+}
+.main-servicios .servicios-section .fotos-servicios #img-diseno-4 {
+  background-image: url(../img/pexels-los-muertos-crew-8478058.jpg);
+  grid-area: img-diseno-4;
+}
+.main-servicios .servicios-section .fotos-eventos #img-even-1 {
+  background-image: url(../img/pexels-ibrahim-boran-903400.jpg);
+  grid-area: img-even-1;
+}
+.main-servicios .servicios-section .fotos-eventos #img-even-2 {
+  background-image: url(../img/pexels-deeana-arts-2418652.jpg);
+  grid-area: img-even-2;
+}
+.main-servicios .servicios-section .fotos-eventos #img-even-3 {
+  background-image: url(../img/pexels-sergio-arreola-14781509.jpg);
+  grid-area: img-even-3;
+}
+
+.foto-diseño {
+  border: solid 0.5px #49516D;
+  height: 16rem;
+  margin: 1rem auto;
+  border-radius: 7px;
   background-size: cover;
   background-position: center;
 }
 
+@media (min-width: 500px) {
+  .main-servicios .servicios-section .fotos-servicios {
+    display: grid;
+    grid-template-areas: "img-diseno-1 img-diseno-2" "img-diseno-3 img-diseno-4";
+    gap: 1%;
+  }
+  .main-servicios .servicios-section .fotos-eventos {
+    display: grid;
+    grid-template-areas: "img-even-1 img-even-1" "img-even-2 img-even-3";
+    gap: 1%;
+  }
+  .foto-diseño {
+    height: 21rem;
+    margin: 0;
+  }
+}
+.cotizaciones-button {
+  margin: 0 0 2rem 60%;
+}
+.cotizaciones-button a {
+  background-color: #49516D;
+  color: #BFDB95;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 12px;
+  padding: 3px 8px;
+  bottom: 30%;
+  right: 1%;
+  transition: 0.8s;
+}
+.cotizaciones-button a:hover {
+  font-size: 13.2px;
+  color: #E2EBF3;
+  transform: scale(1.1);
+}
+
+/*  Cotizaciones button - mediaqueries */
+@media (min-width: 770px) {
+  .cotizaciones-button {
+    margin: 0 0 2rem 60%;
+  }
+  .cotizaciones-button a {
+    display: inline-block;
+    position: fixed;
+  }
+  .cotizaciones-button a .texto-cotizaciones {
+    display: block;
+  }
+}
+.main-contacto {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 4rem;
+}
+.main-contacto .contacto-section {
+  width: 80%;
+  margin: 1rem auto;
+  text-align: justify;
+}
+.main-contacto .contacto-section p {
+  text-align: left;
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.main-contacto .contacto-section p a {
+  color: #876B91;
+}
+.main-contacto .contacto-section p a:hover {
+  text-decoration: underline;
+}
+.main-contacto .mapa {
+  width: 95%;
+  height: 20rem;
+  margin: 4rem auto;
+  border: solid 4px #BFDB95;
+  border-radius: 10px;
+}
+.main-contacto .mapa iframe {
+  width: 100%;
+  height: 100%;
+}
+.main-contacto i {
+  margin-right: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  .main-contacto {
+    width: 90%;
+  }
+  .main-contacto .contacto-section p {
+    font-size: 2rem;
+  }
+  .main-contacto .mapa {
+    width: 95%;
+    height: 30rem;
+    border: solid 8px #BFDB95;
+  }
+}
+@media (min-width: 920px) {
+  .main-contacto .contacto-section p {
+    font-size: 2.4rem;
+  }
+  .main-contacto .mapa {
+    width: 70%;
+    height: 40rem;
+  }
+}
+.cotizaciones-main {
+  margin: auto;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+.cotizaciones-main form {
+  background-color: #876b91;
+  padding: 3rem;
+  border-radius: 10px;
+}
+.cotizaciones-main form legend {
+  padding: 2rem;
+  border-style: none;
+  text-transform: uppercase;
+  font-family: "Poiret One", cursive;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #E2EBF3;
+}
+.cotizaciones-main form .input-cotizaciones {
+  margin-bottom: 1.4rem;
+  color: #E2EBF3;
+}
+.cotizaciones-main form .input-cotizaciones label {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  text-align: left !important;
+}
+.cotizaciones-main form .input-cotizaciones input, .cotizaciones-main form .input-cotizaciones select {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  height: 2.4rem;
+}
+.cotizaciones-main form .input-cotizaciones textarea {
+  margin: 0 auto;
+  width: 100%;
+  height: 8rem;
+}
+
+@media (min-width: 576px) {
+  .cotizaciones-main {
+    width: 85%;
+  }
+  .cotizaciones-main form legend {
+    font-size: 2.1rem;
+    padding: 1rem;
+  }
+  .cotizaciones-main form .input-cotizaciones label {
+    font-size: 2rem;
+  }
+  .cotizaciones-main form .input-cotizaciones input, .cotizaciones-main form .input-cotizaciones select {
+    margin-bottom: 1.8rem;
+    height: 3rem;
+  }
+}
+@media (min-width: 800px) {
+  .cotizaciones-main {
+    width: 65%;
+  }
+  .cotizaciones-main form fieldset {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2%;
+  }
+  .cotizaciones-main form fieldset legend {
+    font-size: 2.4rem;
+    padding: 1rem;
+    grid-column: span 2;
+  }
+  .cotizaciones-main form fieldset .input-cotizaciones label {
+    font-size: 2.2rem;
+  }
+  .cotizaciones-main form fieldset .input-cotizaciones input, .cotizaciones-main form fieldset .input-cotizaciones select {
+    margin-bottom: 1.3rem;
+  }
+  .cotizaciones-main form fieldset .input-cotizaciones textarea {
+    grid-column: span 2;
+    width: 200%;
+    margin-bottom: 3rem;
+  }
+}
+.galeria-main .galeria-section {
+  padding: 3rem;
+  margin: auto;
+  width: 80%;
+}
+.galeria-main .galeria-section .fotos-galeria {
+  width: 16rem;
+  height: 16rem;
+  margin: 5px auto;
+  border-radius: 50px;
+  border: solid 2.5px #E2EBF3;
+  background-size: cover;
+  background-position: bottom;
+}
+.galeria-main .galeria-section .foto-a {
+  background-image: url(../img/pexels-los-muertos-crew-8478058.jpg);
+}
+.galeria-main .galeria-section .foto-b {
+  background-image: url(../img/Cake\ c.jpg);
+}
+.galeria-main .galeria-section .foto-c {
+  background-image: url(../img/Cup\ c.jpg);
+}
+.galeria-main .galeria-section .foto-d {
+  background-image: url(../img/pexels-jess-bailey-designs-913136.jpg);
+}
+.galeria-main .galeria-section .foto-f {
+  background-image: url(../img/pexels-merlin-lightpainting-11309253.jpg);
+}
+.galeria-main .galeria-section .foto-g {
+  background-image: url(../img/pexels-sergio-arreola-14781509.jpg);
+}
+.galeria-main .galeria-section .foto-h {
+  background-image: url(../img/pexels-pegah-sharifi-9598195.jpg);
+}
+.galeria-main .galeria-section .foto-i {
+  background-image: url(../img/Cookies\ c.jpg);
+}
+
+@media (min-width: 500px) {
+  .galeria-main .galeria-section {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .galeria-main .galeria-section .fotos-galeria {
+    width: 20rem;
+    height: 20rem;
+    background-position: center;
+  }
+}
+@media (min-width: 900px) {
+  .galeria-main .galeria-section {
+    width: 80%;
+    grid-template-columns: auto auto auto auto;
+    gap: 2%;
+    width: 90%;
+  }
+  .galeria-main .galeria-section .fotos-galeria {
+    width: 22rem;
+    height: 22rem;
+  }
+}
 .main-header nav {
   background-color: #E2EBF3;
   padding: 1rem;

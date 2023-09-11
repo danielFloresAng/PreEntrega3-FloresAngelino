@@ -66,6 +66,7 @@ a {
   }
 }
 .titulo-main {
+  margin-top: 10rem;
   background-image: url(../img/Cupcakes\ m.jpg);
   background-size: cover;
   background-position: center;
@@ -88,6 +89,9 @@ a {
 }
 
 @media only screen and (min-width: 576px) {
+  .titulo-main {
+    margin-top: 12rem;
+  }
   .titulo-main .container-title .titulo {
     font-size: 3.9rem;
   }
