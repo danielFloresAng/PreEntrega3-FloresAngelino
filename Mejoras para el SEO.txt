@@ -1,0 +1,5 @@
+1 - Se respetaron las etiquetas semánticas.
+2 - Se agregó un favicon en todas las páginas del sitio.
+3 - Se agregaron las metaetiquetas con descripción y palabras clave para cada página del sitio.
+4 - Se respetó la gerarquía de los headings y párrafos.
+5 - Se dejaron comentarios sólo para ubicar mejor las partes de las estructuras en el sitio web y no para esconder código.
