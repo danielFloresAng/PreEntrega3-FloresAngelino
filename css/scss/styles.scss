@@ -39,7 +39,7 @@ h2 {
 a {
   text-decoration: none;
 }
-.titulo-main, .main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
+.main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
   margin-top: 11rem !important;
 }
 
@@ -207,9 +207,7 @@ a {
       .div-galeria {
         height: 65rem;
         max-width: 70%;
-        // display: grid;
         padding: 7px;
-        // gap: 1%;
         grid-template-areas: 
         "foto1 foto2 foto3 foto3"
         "foto1 foto4 foto4 foto8"
@@ -627,7 +625,76 @@ a {
   }
 }
 
-
+// GALERIA
+// Galería - Main
+.galeria-main {
+  .galeria-section {
+    padding: 3rem;
+    margin: auto;
+    width: 80%;
+    .fotos-galeria {
+      width: 16rem;
+      height: 16rem;
+      margin: 5px auto;
+      border-radius: 50px;
+      border: solid 2.5px $white;
+      background-size: cover;
+      background-position: bottom;
+    }
+    .foto-a {
+      background-image: url(../../img/pexels-los-muertos-crew-8478058.jpg);
+    }
+    .foto-b {
+      background-image: url(../../img/Cake\ c.jpg);
+    }
+    .foto-c {
+      background-image: url(../../img/Cup\ c.jpg);
+    }
+    .foto-d {
+      background-image: url(../../img/pexels-jess-bailey-designs-913136.jpg);
+    }
+    .foto-f {
+      background-image: url(../../img/pexels-merlin-lightpainting-11309253.jpg);
+    }
+    .foto-g {
+      background-image: url(../../img/pexels-sergio-arreola-14781509.jpg);
+    }
+    .foto-h {
+      background-image: url(../../img/pexels-pegah-sharifi-9598195.jpg);
+    }
+    .foto-i {
+      background-image: url(../../img/Cookies\ c.jpg);
+    }
+  }
+}
+// Galería - mediaQueries
+@media (min-width: 500px) {
+  .galeria-main {
+    .galeria-section {
+      display: grid;
+      grid-template-columns: auto auto;
+      .fotos-galeria {
+        width: 20rem;
+        height: 20rem;
+        background-position: center;
+      }
+    }
+  }
+}
+@media (min-width: 900px) {
+  .galeria-main {
+    .galeria-section {
+      width: 80%;
+      grid-template-columns: auto auto auto auto;
+      gap: 2%;
+      width: 90%;
+      .fotos-galeria {
+        width: 22rem;
+        height: 22rem;
+      }
+    }
+  }
+}
 
 // SASS Import
 @import 'header-footer.scss';

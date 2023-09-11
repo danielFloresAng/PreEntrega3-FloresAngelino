@@ -38,7 +38,7 @@ a {
   text-decoration: none;
 }
 
-.titulo-main, .main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
+.main-servicios, .products-main, .cotizaciones-main, .galeria-main, .main-contacto {
   margin-top: 11rem !important;
 }
 
@@ -499,6 +499,68 @@ a {
     grid-column: span 2;
     width: 200%;
     margin-bottom: 3rem;
+  }
+}
+.galeria-main .galeria-section {
+  padding: 3rem;
+  margin: auto;
+  width: 80%;
+}
+.galeria-main .galeria-section .fotos-galeria {
+  width: 16rem;
+  height: 16rem;
+  margin: 5px auto;
+  border-radius: 50px;
+  border: solid 2.5px #E2EBF3;
+  background-size: cover;
+  background-position: bottom;
+}
+.galeria-main .galeria-section .foto-a {
+  background-image: url(../../img/pexels-los-muertos-crew-8478058.jpg);
+}
+.galeria-main .galeria-section .foto-b {
+  background-image: url(../../img/Cake\ c.jpg);
+}
+.galeria-main .galeria-section .foto-c {
+  background-image: url(../../img/Cup\ c.jpg);
+}
+.galeria-main .galeria-section .foto-d {
+  background-image: url(../../img/pexels-jess-bailey-designs-913136.jpg);
+}
+.galeria-main .galeria-section .foto-f {
+  background-image: url(../../img/pexels-merlin-lightpainting-11309253.jpg);
+}
+.galeria-main .galeria-section .foto-g {
+  background-image: url(../../img/pexels-sergio-arreola-14781509.jpg);
+}
+.galeria-main .galeria-section .foto-h {
+  background-image: url(../../img/pexels-pegah-sharifi-9598195.jpg);
+}
+.galeria-main .galeria-section .foto-i {
+  background-image: url(../../img/Cookies\ c.jpg);
+}
+
+@media (min-width: 500px) {
+  .galeria-main .galeria-section {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .galeria-main .galeria-section .fotos-galeria {
+    width: 20rem;
+    height: 20rem;
+    background-position: center;
+  }
+}
+@media (min-width: 900px) {
+  .galeria-main .galeria-section {
+    width: 80%;
+    grid-template-columns: auto auto auto auto;
+    gap: 2%;
+    width: 90%;
+  }
+  .galeria-main .galeria-section .fotos-galeria {
+    width: 22rem;
+    height: 22rem;
   }
 }
 .main-header nav {
