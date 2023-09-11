@@ -3,3 +3,4 @@
 3 - Se agregaron las metaetiquetas con descripción y palabras clave para cada página del sitio.
 4 - Se respetó la gerarquía de los headings y párrafos.
 5 - Se dejaron comentarios sólo para ubicar mejor las partes de las estructuras en el sitio web y no para esconder código.
+6 - Se reemplazaron los textos Lorem ipsum por textos originales.
